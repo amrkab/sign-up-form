@@ -1,0 +1,56 @@
+/* * {border: 2px solid black;} */
+
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    font-family: main-font;
+
+}
+
+@font-face {
+    font-family: 'main-font';
+    src: url('/fonts/webfontkit-20240126-105227/mija_w03_regular-webfont.woff2') format('woff2'),
+         url('/fonts/webfontkit-20240126-105227/mija_w03_regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+.right-side {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    background-color: rgb(255, 236, 232);
+}
+
+div.hero {
+    flex-grow: 1;
+}
+
+div.sign-up {
+    flex-grow: 1;
+}
+
+div.cta {
+    flex-grow: 1;
+}
+
+.left-side {
+    position: relative;
+}
+
+img.backdrop {
+    height: 100vh;
+    width: 500px;
+    position: relative;
+}
+
+.logo {
+    width: 150px;
+    position: absolute;
+    top: 320px;
+    left: 180px;
+}
