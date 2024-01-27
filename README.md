@@ -1,1 +1,2 @@
-# sign-up-form
+This project demonstrates basic HTML form ability.
+
