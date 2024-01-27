@@ -9,7 +9,6 @@ body {
     margin: 0;
     padding: 0;
     height: 100vh;
-    overflow: hidden;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -112,6 +111,13 @@ form .button input{
     background: linear-gradient(135deg, #152660, #a383c2, #fdaaac);
     padding: 15px;
 }
+
+.user-details .input-box .error-message {
+    color: red;
+    font-size: 14px;
+    margin-top: 5px;
+}
+
 
 form .button input:hover{
     background: linear-gradient(-135deg, #152660, #a383c2, #fdaaac);
