@@ -121,6 +121,7 @@ form .button input{
 
 form .button input:hover{
     background: linear-gradient(-135deg, #152660, #a383c2, #fdaaac);
+    cursor: pointer;
 }
 
 div.log-in {
