@@ -1,4 +1,9 @@
-/* * {border: 2px solid black;} */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: main-font;
+}
 
 body {
     margin: 0;
@@ -6,8 +11,9 @@ body {
     height: 100vh;
     overflow: hidden;
     display: flex;
-    font-family: main-font;
-
+    flex-direction: column;
+    align-items: center;
+    background: linear-gradient(135deg, #152660, #a383c2, #fdaaac);
 }
 
 @font-face {
@@ -19,38 +25,105 @@ body {
 
 }
 
-.right-side {
-    display: flex;
-    flex-direction: column;
-    flex-grow: 1;
-    background-color: rgb(255, 236, 232);
+
+input {
+    appearance: none;
 }
 
 div.hero {
+    color: white;
+    max-width: 1000px;
+    text-align: center;
+}
+
+div.big-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     flex-grow: 1;
 }
 
-div.sign-up {
+div.small-container{
+    max-width: 700px;
+    width: 100%;
+    background-color: white;
+    padding: 25px 30px;
+    border-radius: 10px;
+}
+
+.small-container .title{
+    font-size: 25px;
+    font-weight: 500;
+    text-align: center;
+    color: #152660;
+}
+
+.small-container form .user-details{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 20px 0 12px 0;
+}
+
+form .user-details .input-box{
+    margin-bottom: 15px;
+    width: calc(100% / 2 - 20px);
+}
+
+.user-details .input-box .details {
+    display: block;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+.user-details .input-box input{
+    height: 45px;
+    width: 100%;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid #fdaaac;
+    padding-left: 15px;
+    font-size: 16px;
+    border-bottom-width: 2px;
+    border-right-width: 2px;
+    transition: all 0.3s ease;
+}
+
+.user-details .input-box input:focus,
+.user-details .input-box input:valid{
+    border-color: #152660;
+}
+
+.button{
+    display: flex;
+    justify-content: center;
+}
+
+form .button input{
+    height: 100%;
+    width: 25%;
+    outline: none;
+    color: white;
+    border: none;
+    font-size: 18px;
+    font-weight: 500;
+    border-radius: 10px;
+    letter-spacing: 1px;
+    background: linear-gradient(135deg, #152660, #a383c2, #fdaaac);
+    padding: 15px;
+}
+
+form .button input:hover{
+    background: linear-gradient(-135deg, #152660, #a383c2, #fdaaac);
+}
+
+div.log-in {
     flex-grow: 1;
+    color: white;
 }
 
-div.cta {
-    flex-grow: 1;
-}
 
-.left-side {
-    position: relative;
-}
-
-img.backdrop {
-    height: 100vh;
-    width: 500px;
-    position: relative;
-}
-
-.logo {
-    width: 150px;
-    position: absolute;
-    top: 320px;
-    left: 180px;
+img.logo {
+    width: 200px;
+    margin: 40px 0px;
 }

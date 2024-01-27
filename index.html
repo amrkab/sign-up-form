@@ -8,40 +8,57 @@
 </head>
 <body>
     <div class="left-side">
-        <img src="images/background.jpg" alt="login-backdrop" class="backdrop">
         <img src="images/logo.png" alt="logo" class="logo">
     </div>
 
-    <div class="right-side">
         <div class="hero">
-            this is just some text
+            <h2>This sign up form is to test my ability on HTML forms and CSS. I went with my own design instead of the 
+                template I was meant to follow. This sign up form does check for the same password, go ahead and try.
+            </h2>
         </div>
 
-        <div class="sign-up">
-            <form action="" method="post">
-                <label for="first_name">First Name</label>
-                <input type="text" id="first_name">
-
-                <label for="last">Last Name</label>
-                <input type="text" id="last">
-                
-                <label for="email">Email</label>
-                <input type="email" id="email">
-
-                <label for="tel">Phone Number</label>
-                <input type="tel" id="tel">
-
-                <label for="password">Password</label>
-                <input type="password" id="password">
-
-                <label for="password-confirm">Confirm Password</label>
-                <input type="password" id="password-confirm">
-            </form>
+        <div class="big-container">
+            <div class="small-container">
+                <div class="title">Sign Up</div>
+                    <form action="#"  class="sign-up-form">
+                        <div class="user-details">
+                        <div class="input-box">
+                            <label for="first_name" class="details">First Name</label>
+                            <input type="text" id="first_name" placeholder="First Name" required>
+                        </div>
+                        <div class="input-box">
+                            <label for="last" class="details">Last Name</label>
+                            <input type="text" id="last" placeholder="Last Name" required>
+                        </div>
+            
+                        <div class="input-box">
+                            <label for="email" class="details">Email</label>
+                            <input type="email" id="email" placeholder="Email" required>
+                        </div>
+                        <div class="input-box">
+                            <label for="tel" class="details">Phone Number</label>
+                            <input type="tel" id="tel" placeholder="Phone Number" required>
+                        </div>
+                        <div class="input-box">
+                            <label for="password" class="details">Password</label>
+                            <input type="password" id="password" placeholder="Password" required>
+                        </div>
+                        <div class="input-box">
+                            <label for="password-confirm" class="details">Confirm Password</label>
+                            <input type="password" id="password-confirm" placeholder="Confirm Password" required>
+                        </div>
+                        </div>
+                        <div class="button">
+                            <input type="submit" value="Sign Up" id="sign-up-button">
+                        </div>
+                    </form>
+            </div>
         </div>
 
-        <div class="cta">
-            this is where the cta button goes
+        <div class="log-in">
+            Already have an account? <a href="" class="log-in-link">Log in</a>
         </div>
-    </div>
+
+        <script src="app.js"></script>
 </body>
 </html>
